@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: simple-yt-replicate-BACKEND
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testing  # JDBC URL for Postgres connection (update host, port, and DB name as needed)
+    username: postgres  # Database username
+    password: postgres  # Database password (use environment variables or secrets management in production)
+    driver-class-name: org.postgresql.Driver  # Driver class for PostgreSQL
+
+  jpa:
+    database: postgresql  # Specifies the database platform
+    show-sql: true  # Logs SQL statements for debugging
+    hibernate:
+      ddl-auto: update  # Automatically updates schema (options: create, create-drop, validate, none; use 'update' for development)
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect  # Dialect for Postgres-specific SQL generation
+
+server:
+  port: 8080
