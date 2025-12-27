@@ -1,4 +1,4 @@
-package in.subramanyachar.BACKEND.controller;
+package in.subramanyachar.SketchSyncBackend.controller;
 
 import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;

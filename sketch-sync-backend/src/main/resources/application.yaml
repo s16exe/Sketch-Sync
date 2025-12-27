@@ -1,6 +1,6 @@
 spring:
   application:
-    name: simple-yt-replicate-BACKEND
+    name: SketchSyncBackend
 
   datasource:
     url: jdbc:postgresql://localhost:5432/testing  # JDBC URL for Postgres connection (update host, port, and DB name as needed)

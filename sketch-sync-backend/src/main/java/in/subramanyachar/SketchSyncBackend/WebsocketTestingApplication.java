@@ -1,4 +1,4 @@
-package in.subramanyachar.BACKEND;
+package in.subramanyachar.SketchSyncBackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
