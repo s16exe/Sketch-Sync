@@ -1,0 +1,64 @@
+/* Reset default browser margins */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling when drawing */
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Floating, modern toolbar */
+.toolbar {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+  align-items: center;
+}
+
+.toolbar button {
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  background: #f1f3f5;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #495057;
+  transition: all 0.2s ease;
+}
+
+.toolbar button:hover:not(.active) {
+  background: #e9ecef;
+}
+
+/* Style for the currently selected tool */
+.toolbar button.active {
+  background: #e7f5ff;
+  color: #1c7ed6;
+  border: 2px solid #339af0;
+}
+
+/* Special style for the save button */
+.save-btn {
+  margin-left: 16px;
+  background: #40c057 !important;
+  color: white !important;
+}
+
+.save-btn:hover {
+  background: #2b8a3e !important;
+}
